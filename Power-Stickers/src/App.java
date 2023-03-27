@@ -5,6 +5,7 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
+import java.lang.Math;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -26,11 +27,11 @@ public class App {
         for (Map<String,String> filme : listaDeFilmes) {
             System.out.println("Rank: "+ filme.get("rank"));
             System.out.println("Ano: " + filme.get("year"));
-            System.out.println("Titulo: "+ filme.get("title"));
+            System.out.println("Titulo: " + filme.get("title"));
             System.out.println("Poster: " + filme.get("image"));
             double classificacao = Double.parseDouble(filme.get("imDbRating"));
             System.out.print("Classificação: ");
-            for (int i = 1; i <= classificacao; i++){
+            for (int i = 1; i <= Math.round(classificacao); i++){
                 System.out.print("⭐");
             }
             System.out.print(" (" + filme.get("imDbRating") + ")");
