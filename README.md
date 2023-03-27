@@ -13,3 +13,4 @@ Na aula, foi explorada a API pública do site IMDB, acessando o endpoint "top250
 Além disso, os professores propuseram um desafio para refatorar a exibição da classificação, adicionando emojis para melhorar o layout.
 
 
+![aula_1_imdb_api](https://user-images.githubusercontent.com/75283897/228066415-4c1a6223-836a-4b4c-ab1d-6be2ed7bc53c.PNG)
